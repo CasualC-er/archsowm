@@ -13,6 +13,7 @@ systemctl enable sddm
 cd /opt
 git clone https://github.com/dylanaraps/sowm
 cd sowm
+cp config.h.def config.h
 make install
 mkdir /opt/desktops
 touch sowm.sh /opt/desktops
