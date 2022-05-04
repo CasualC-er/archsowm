@@ -6,5 +6,5 @@ mkdir /mnt/boot
 mount /dev/sda1 /mnt/boot
 mount /dev/sda2 /mnt
 pacstrap /mnt base base-devel linux linux-firmware vim
-genfstab -U /mnt -o /etc/fstab
+genfstab -U /mnt > /etc/fstab
 arch-chroot /mnt
